@@ -10,19 +10,74 @@ html {
   font-size: 62.5%;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.5rem 0;
+}
+.section:first-child {
+  padding-top: 9.5rem;
+}
+@media (min-width: 590px) {
+  .section {
+    padding: 13rem 0;
+  }
+}
+.section__image {
+  width: 85%;
+  margin: 2.5rem 0;
+}
+
+.section-heading {
+  font-size: 2.1rem;
+  text-align: center;
+  padding: 0 3rem;
+  color: #4d545a;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+@media (min-width: 590px) {
+  .section-heading {
+    font-size: 3.5rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+.section-text {
+  font-size: 1.4rem;
+  color: #b1b5b8;
+  line-height: 2.5rem;
+  padding: 0 2.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.section-text:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 590px) {
+  .section-text {
+    max-width: 69.4rem;
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.smaller-heading {
+  color: #4d545a;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 .header {
   background-image: url("../img/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 9.5rem 0;
 }
 @media (min-width: 590px) {
   .header {
     background-image: url("../img/bg-header-desktop.png");
-    padding: 13rem 0;
   }
 }
 .header__logo {
@@ -32,35 +87,6 @@ html {
 @media (min-width: 590px) {
   .header__logo {
     margin-bottom: 6.8rem;
-  }
-}
-.header h1 {
-  font-size: 2.1rem;
-  text-align: center;
-  padding: 0 3rem;
-  color: #4d545a;
-  margin-bottom: 2rem;
-  line-height: 3rem;
-}
-@media (min-width: 590px) {
-  .header h1 {
-    font-size: 3.5rem;
-    margin-bottom: 2.8rem;
-  }
-}
-.header p {
-  font-size: 1.4rem;
-  color: #b1b5b8;
-  line-height: 2.5rem;
-  padding: 0 2.5rem;
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-@media (min-width: 590px) {
-  .header p {
-    max-width: 69.4rem;
-    font-size: 1.7rem;
-    margin-bottom: 5rem;
   }
 }
 .header__buttons {

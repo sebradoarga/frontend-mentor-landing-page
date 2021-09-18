@@ -1,4 +1,5 @@
 @use "mediaqueries" as mq;
+@use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
 
 * {
@@ -10,4 +11,64 @@
 
 html {
   font-size: 62.5%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.5rem 0;
+
+  &:first-child {
+    padding-top: 9.5rem;
+  }
+
+  @include mq.tablet {
+    padding: 13rem 0;
+  }
+
+  &__image {
+    width: 85%;
+    margin: 2.5rem 0;
+  }
+}
+
+.section-heading {
+  font-size: 2.1rem;
+  text-align: center;
+  padding: 0 3rem;
+  color: v.$darkGray;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+
+  @include mq.tablet {
+    font-size: 3.5rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+.section-text {
+  font-size: 1.4rem;
+  color: v.$lightGray;
+  line-height: 2.5rem;
+  padding: 0 2.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq.tablet {
+    max-width: 69.4rem;
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.smaller-heading {
+  color: v.$darkGray;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }

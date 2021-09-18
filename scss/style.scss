@@ -6,14 +6,9 @@
   background-image: url("../img/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 9.5rem 0;
 
   @include mq.tablet {
     background-image: url("../img/bg-header-desktop.png");
-    padding: 13rem 0;
   }
 
   &__logo {
@@ -22,35 +17,6 @@
 
     @include mq.tablet {
       margin-bottom: 6.8rem;
-    }
-  }
-
-  h1 {
-    font-size: 2.1rem;
-    text-align: center;
-    padding: 0 3rem;
-    color: v.$darkGray;
-    margin-bottom: 2rem;
-    line-height: 3rem;
-
-    @include mq.tablet {
-      font-size: 3.5rem;
-      margin-bottom: 2.8rem;
-    }
-  }
-
-  p {
-    font-size: 1.4rem;
-    color: v.$lightGray;
-    line-height: 2.5rem;
-    padding: 0 2.5rem;
-    text-align: center;
-    margin-bottom: 2.5rem;
-
-    @include mq.tablet {
-      max-width: 69.4rem;
-      font-size: 1.7rem;
-      margin-bottom: 5rem;
     }
   }
 
