@@ -120,6 +120,10 @@
   @include mq.tablet {
     flex-direction: row;
     justify-content: space-between;
+    padding: 4.4rem 3rem;
+  }
+
+  @include mq.desktop {
     padding: 4.4rem 16.5rem;
   }
 

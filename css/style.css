@@ -261,6 +261,11 @@ a:hover {
   .footer {
     flex-direction: row;
     justify-content: space-between;
+    padding: 4.4rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
     padding: 4.4rem 16.5rem;
   }
 }
