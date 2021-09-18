@@ -19,67 +19,6 @@
       margin-bottom: 6.8rem;
     }
   }
-
-  &__buttons {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 2.5rem;
-    align-items: center;
-
-    @include mq.tablet {
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    button {
-      height: 4.3rem;
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: white;
-      border-radius: 20px;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      width: 23.2rem;
-      transition: all 250ms ease;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      @include mq.tablet {
-        height: 5.4rem;
-        width: 23.2rem;
-        margin: 0.9rem;
-        border-radius: 40px;
-        font-size: 1.8rem;
-      }
-    }
-
-    &__ios {
-      margin-bottom: 2rem;
-      background: v.$aqua;
-      border-bottom: 2px solid v.$aquaShadow;
-
-      &:hover {
-        box-shadow: v.$aqua 0px 10px 20px -10px;
-      }
-
-      @include mq.tablet {
-        margin-bottom: 0;
-      }
-    }
-
-    &__mac {
-      background: v.$purple;
-      border-bottom: 2px solid v.$purpleShadow;
-
-      &:hover {
-        box-shadow: v.$purple 0px 10px 20px -10px;
-      }
-    }
-  }
 }
 
 .description {
@@ -111,10 +50,6 @@
         text-align: left;
       }
 
-      h3 {
-        font-size: 2.1rem;
-      }
-
       p {
         font-size: 1.8rem;
       }
@@ -143,6 +78,34 @@
 
     img {
       width: 3.3rem;
+    }
+  }
+
+  @include mq.desktop {
+    .wrap {
+      display: flex;
+      max-width: 110rem;
+      justify-content: center;
+
+      article {
+        max-width: 33.5rem;
+      }
+    }
+  }
+}
+
+.companies {
+  &__logo {
+    margin: 2.5rem 0;
+  }
+
+  @include mq.tablet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+      margin: 0 2.5rem;
     }
   }
 }
