@@ -1,5 +1,6 @@
 @use "utilities";
 @use "variables" as v;
+@use "mediaqueries" as mq;
 
 .header {
   background-image: url("../img/bg-header-mobile.png");
@@ -10,18 +11,32 @@
   align-items: center;
   padding: 9.5rem 0;
 
+  @include mq.tablet {
+    background-image: url("../img/bg-header-desktop.png");
+    padding: 13rem 0;
+  }
+
   &__logo {
     width: 10rem;
     margin-bottom: 5.5rem;
+
+    @include mq.tablet {
+      margin-bottom: 6.8rem;
+    }
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     text-align: center;
     padding: 0 3rem;
     color: v.$darkGray;
     margin-bottom: 2rem;
     line-height: 3rem;
+
+    @include mq.tablet {
+      font-size: 3.5rem;
+      margin-bottom: 2.8rem;
+    }
   }
 
   p {
@@ -31,6 +46,12 @@
     padding: 0 2.5rem;
     text-align: center;
     margin-bottom: 2.5rem;
+
+    @include mq.tablet {
+      max-width: 69.4rem;
+      font-size: 1.7rem;
+      margin-bottom: 5rem;
+    }
   }
 
   &__buttons {
@@ -38,27 +59,59 @@
     flex-direction: column;
     width: 100%;
     padding: 0 2.5rem;
+    align-items: center;
+
+    @include mq.tablet {
+      flex-direction: row;
+      justify-content: center;
+    }
 
     button {
       height: 4.3rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 600;
       color: white;
       border-radius: 20px;
       border-top: none;
       border-left: none;
       border-right: none;
+      width: 23.2rem;
+      transition: all 250ms ease;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @include mq.tablet {
+        height: 5.4rem;
+        width: 23.2rem;
+        margin: 0.9rem;
+        border-radius: 40px;
+        font-size: 1.8rem;
+      }
     }
 
     &__ios {
       margin-bottom: 2rem;
       background: v.$aqua;
       border-bottom: 2px solid v.$aquaShadow;
+
+      &:hover {
+        box-shadow: v.$aqua 0px 10px 20px -10px;
+      }
+
+      @include mq.tablet {
+        margin-bottom: 0;
+      }
     }
 
     &__mac {
       background: v.$purple;
       border-bottom: 2px solid v.$purpleShadow;
+
+      &:hover {
+        box-shadow: v.$purple 0px 10px 20px -10px;
+      }
     }
   }
 }
