@@ -13,6 +13,20 @@ html {
   font-size: 62.5%;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: v.$darkGray;
+  transition: color 250ms ease;
+}
+
+a:hover {
+  color: v.$aqua;
+}
+
 .section {
   display: flex;
   flex-direction: column;
