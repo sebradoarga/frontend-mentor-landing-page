@@ -21,12 +21,21 @@ html {
 }
 @media (min-width: 590px) {
   .section {
-    padding: 13rem 0;
+    padding: 7.6rem;
+  }
+  .section:first-child {
+    padding-top: 13rem;
   }
 }
 .section__image {
   width: 85%;
   margin: 2.5rem 0;
+  max-width: 80rem;
+}
+.section .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-heading {
@@ -145,4 +154,39 @@ html {
 }
 .header__buttons__mac:hover {
   box-shadow: #6272fb 0px 10px 20px -10px;
+}
+
+.description {
+  padding-bottom: 0;
+}
+
+.features-one {
+  padding-top: 28rem;
+}
+@media (min-width: 1200px) {
+  .features-one {
+    flex-direction: row;
+    padding-top: 5.5rem;
+  }
+  .features-one .wrap {
+    align-items: flex-start;
+  }
+  .features-one .wrap .section-text {
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  .features-one .wrap h3,
+.features-one .wrap p {
+    text-align: left;
+  }
+  .features-one .wrap h3 {
+    font-size: 2.1rem;
+  }
+  .features-one .wrap p {
+    font-size: 1.8rem;
+  }
+  .features-one img {
+    position: relative;
+    right: 11rem;
+  }
 }/*# sourceMappingURL=style.css.map */

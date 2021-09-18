@@ -24,12 +24,22 @@ html {
   }
 
   @include mq.tablet {
-    padding: 13rem 0;
+    padding: 7.6rem;
+    &:first-child {
+      padding-top: 13rem;
+    }
   }
 
   &__image {
     width: 85%;
     margin: 2.5rem 0;
+    max-width: 80rem;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
