@@ -87,7 +87,14 @@
 }
 
 .features-one {
-  padding-top: 28rem;
+  padding-top: 2.8rem;
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @include mq.desktop {
     flex-direction: row;
     padding-top: 5.5rem;
@@ -116,6 +123,26 @@
     img {
       position: relative;
       right: 11rem;
+    }
+  }
+}
+
+.features-two {
+  img {
+    margin-bottom: 0;
+  }
+  padding-bottom: 2rem;
+}
+
+.features-three {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5rem;
+
+    img {
+      width: 3.3rem;
     }
   }
 }

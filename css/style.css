@@ -32,11 +32,6 @@ html {
   margin: 2.5rem 0;
   max-width: 80rem;
 }
-.section .wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .section-heading {
   font-size: 2.1rem;
@@ -77,6 +72,7 @@ html {
   font-size: 1.7rem;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .header {
@@ -161,7 +157,12 @@ html {
 }
 
 .features-one {
-  padding-top: 28rem;
+  padding-top: 2.8rem;
+}
+.features-one .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 1200px) {
   .features-one {
@@ -189,4 +190,21 @@ html {
     position: relative;
     right: 11rem;
   }
+}
+
+.features-two {
+  padding-bottom: 2rem;
+}
+.features-two img {
+  margin-bottom: 0;
+}
+
+.features-three article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.5rem;
+}
+.features-three article img {
+  width: 3.3rem;
 }/*# sourceMappingURL=style.css.map */
